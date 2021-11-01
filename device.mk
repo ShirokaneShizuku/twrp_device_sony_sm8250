@@ -51,13 +51,13 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     bootctrl.sony_sm8250 \
     bootctrl.sony_sm8250.recovery \
+    bootctrl.kona.recovery \
     android.hardware.boot@1.0-service \
     android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-impl.recovery 
-
-# fastbootd
-PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-impl.recovery \
+    android.hardware.boot@1.0-impl-wrapper.recovery \
     android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery \
     fastbootd
 
 # SHIPPING API
