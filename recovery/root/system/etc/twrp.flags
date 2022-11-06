@@ -3,10 +3,10 @@
 /data                      f2fs                /dev/block/bootdevice/by-name/userdata                 flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,metadata_encryption=aes-256-xts,keydirectory=/metadata/vold/metadata_encryption
 
 # super
-/system                    ext4                /dev/block/mapper/system_a                             flags=display="System";
-/vendor                    ext4                /dev/block/mapper/vendor_a                             flags=display="Vendor";
-/product                   ext4                /dev/block/mapper/product_a                            flags=display="Product";
-/odm                       ext4                /dev/block/mapper/odm_a                                flags=display="Odm";
+system                     ext4                /system                                                flags=display="system";
+vendor                     ext4                /vendor                                                flags=display="vendor";
+product                    ext4                /product                                               flags=display="product";
+odm                        ext4                /odm                                                   flags=display="odm";
 
 /boot                      emmc                /dev/block/bootdevice/by-name/boot                     flags=display="Boot";backup=1;flashimg=1;slotselect
 /recovery                  emmc                /dev/block/bootdevice/by-name/recovery                 flags=display="Recovery";backup=1;flashimg=1;slotselect
