@@ -16,7 +16,7 @@
 
 # Release name
 PRODUCT_RELEASE_NAME := pdx206
-DEVICE_PATH := device/sony/sm8250
+DEVICE_PATH := device/sony/pdx206
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
